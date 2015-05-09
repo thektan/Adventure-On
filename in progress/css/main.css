@@ -1,0 +1,251 @@
+/* 
+    Created on : May 8, 2015, 4:31:38 PM
+    Author     : Kevin Tan
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.lighten {
+    color: #333333;
+}
+
+a.lighten:hover {
+    color: #DDDDDD;
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.back-button, .next-button {
+    font-family: "Montserrat";
+    font-size: 1em;
+    font-weight: 700;
+    color: #DDDDDD;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.back-button:hover, 
+.next-button:hover { 
+    color: #1E4FE6;
+}
+
+.back-button:hover .line,
+.next-button:hover .line,
+.top-button:hover .line { 
+    background-color: #1E4FE6;
+}
+
+.back-button {
+    -webkit-transform: rotate(-90deg); /* Safari */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -ms-transform: rotate(-90deg); /* IE */
+    -o-transform: rotate(-90deg); /* Opera */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
+    left: 0;
+}
+
+.next-button {
+    -webkit-transform: rotate(90deg); /* Safari */
+    -moz-transform: rotate(90deg); /* Firefox */
+    -ms-transform: rotate(90deg); /* IE */
+    -o-transform: rotate(90deg); /* Opera */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /* Internet Explorer */
+    right: 0;
+}
+
+.top-button {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 24px;
+    color: #DDDDDD;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-button:hover {
+    color: #1E4FE6;
+}
+
+.line {
+    display: block;
+    background-color: #DDDDDD;
+    margin: 0 auto 10px auto;
+    width: 4px;
+}
+
+.line.twenty-five {
+    height: 25px;
+}
+
+.line.one-hundred {
+    height: 100px;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3 { margin: 0; }
+
+h1, h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #333333;
+}
+
+h3 {
+    font-family: "Neuton";
+    font-weight: 300;
+    color: #919191;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: "Neuton";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+    max-width: 650px;
+    margin: 50px auto;
+    padding-left: 60px;
+    border-left: #DDDDDD solid 4px;
+}
+
+#website-title {
+    float: left;
+    font-size: 24px;
+    padding: 0 50px;
+}
+
+#navigation-button {
+    float: right;
+    font-size: 14px;
+    padding: 0 50px;
+}
+
+.post-header-container h1 {
+    font-size: 4.16em;
+    color: #1E4FE6;
+}
+
+/* Containers
+–––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#full-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.header-container {
+    width: 100%;
+    margin: 50px 0 45px 0;
+    overflow: auto;
+}
+
+.post-header-container {
+    display: block;
+    width: 100%;
+    text-align: left;
+    overflow: auto;
+}
+
+.post-header-title-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.post-title-container-wrap {
+    position: absolute;
+    max-width: 1000px;
+    width: 75%;
+}
+
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––––– */
+img {
+    width: 100%;
+}
+
+.post-header-container img {
+    width: 83.333%;
+    float: right;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    opacity: 0.15;
+}
+
+/* Responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 1120px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Removes sideline buttons. */
+@media (max-width: 950px) {
+    #full-page-container {
+        padding: 0;
+    }
+    
+    .post-header-title-container {
+        padding-left: 10%;
+    }
+    
+    .back-button, .next-button {
+        visibility: hidden;
+    }
+}
+
+/* Removes line next to paragraph element. */
+@media (max-width: 850px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h3 { font-size: 20px; }
+    
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 650px;
+        margin: 30px auto;
+        padding: 0 20px;
+        border-left: #DDDDDD solid 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 12px;
+    }
+
+    p {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 510px) {
+    body {
+        font-size: 8px;
+    }
+    
+    #website-title {
+        font-size: 20px;
+    }
+    
+    #navigation-button {
+        font-size: 12px;
+    }
+}
