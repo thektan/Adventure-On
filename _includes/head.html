@@ -9,4 +9,21 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  
+  <link href='http://fonts.googleapis.com/css?family=Neuton:300|Montserrat:700' rel='stylesheet' type='text/css'>
+
+  <!-- Javascript
+  ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script src="{{ "/js/jquery.lazyload.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/masonry.pkgd.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/imagesloaded.pkgd.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/modernizr.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/jquery.easing.1.3.js" | prepend: site.baseurl }}"></script>
+
+  <!-- Fallback if no javascript is available.
+  ––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <noscript>
+    <link rel="stylesheet" href="{{ "/css/main-nojs.css" | prepend: site.baseurl }}">
+  </noscript>
 </head>

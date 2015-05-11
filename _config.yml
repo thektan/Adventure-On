@@ -9,7 +9,9 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://ktan.me" # the base hostname & protocol for your site
 twitter_username: thektan
 github_username:  thektan
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
+paginate: 10
+paginate_path: "/page:num/"
 
 # Build settings
 markdown: kramdown

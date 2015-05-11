@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include pagination-single.html %}
+
+<div class="post-container">
+	<div class="post-header-container">
+	    <img src="{{ page.photo }}" alt="post header image"/>
+	    <div class="post-title-container-wrap">
+	        <div class="post-header-title-container">
+	            <h3>{{ page.date | date: "%B %-d, %Y" }}</h3>
+	            <h1>{{ page.title }}</h1>
+	        </div>
+	    </div>
+	</div>
+
+	{{ content }}
+
+	<a href="#">
+	    <div class="top-button">
+	        <div class="line one-hundred"></div>
+	        Top
+	    </div>
+	</a>
+
+</div>

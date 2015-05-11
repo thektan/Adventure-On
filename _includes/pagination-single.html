@@ -1,0 +1,23 @@
+<!-- 
+
+	Pagination for single post pages page.
+
+-->
+
+{% if page.previous %}
+<a href="{{ page.previous.url | prepend: site.baseurl }}">
+  <div class="back-button">
+    <div class="line twenty-five"></div>
+    Back
+  </div>
+</a>
+{% endif %}
+
+{% if page.next %}
+<a href="{{ page.next.url | prepend: site.baseurl }}">
+  <div class="next-button">
+    <div class="line twenty-five"></div>
+    Next
+  </div>
+</a>
+{% endif %}

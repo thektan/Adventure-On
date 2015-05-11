@@ -1,0 +1,23 @@
+<!-- 
+
+	Pagination for index page.
+
+-->
+
+{% if paginator.previous_page %}
+<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+  <div class="back-button">
+    <div class="line twenty-five"></div>
+    Back
+  </div>
+</a>
+{% endif %}
+
+{% if paginator.next_page %}
+<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+  <div class="next-button">
+    <div class="line twenty-five"></div>
+    Next
+  </div>
+</a>
+{% endif %}
