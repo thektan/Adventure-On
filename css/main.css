@@ -42,6 +42,10 @@ p a:hover {
     transition: all 0.2s ease-in-out;
 }
 
+.masonry-gutter {
+    width: 5%;
+}
+
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .back-button, .next-button {
@@ -189,13 +193,13 @@ p {
 #website-title {
     float: left;
     font-size: 24px;
-    padding: 0 50px;
+    padding: 0 0px;
 }
 
 #navigation-button {
     float: right;
     font-size: 14px;
-    padding: 0 50px;
+    padding: 0 0px;
 }
 
 .post-header-container h1 {
@@ -213,7 +217,8 @@ a.header-title-link:hover .read-more-button {
 }
 
 .post-list-item-container h1 {
-    font-size: 20px;
+    font-size: 24px;
+    width: 80%;
 }
 
 .post-list-item-container h3 {
@@ -271,14 +276,13 @@ ul {
 }
 
 .post-list-container {
-    overflow: hidden;
-    margin: 50px auto;
-    width: 95%;
+    overflow: visible;
+    margin: 70px auto;
+    width: 100%;
 }
 
 .post-list-item-container {
     width: 30%;
-    margin: 1.667%;
     padding-bottom: 20px;
 }
 
@@ -339,6 +343,10 @@ img {
     #full-page-container {
         padding: 0;
     }
+
+    #website-title      { padding: 0 10%; }
+    #navigation-button  { padding: 0 10%; }
+
     
     .post-header-title-container {
         padding-left: 10%;
@@ -349,7 +357,7 @@ img {
     }
     
     .post-list-container {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -370,7 +378,6 @@ img {
     
     .post-list-item-container {
         width: 45%;
-        margin: 2.5%;
     }
 }
 
