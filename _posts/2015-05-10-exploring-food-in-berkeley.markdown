@@ -3,7 +3,7 @@ layout: full
 title:  "Exploring Food in Berkeley and Oakland"
 date:   2015-04-25
 categories: adventure
-photo:	/blog/images/2015-04-25 13.16.30.jpg
+photo:	/images/2015-04-25 13.16.30.jpg
 ---
 
 Three friends and I went on a journey around Oakland and Berkeley eating at places we’ve never been to before. We planned this earlier and even created a google map document siting all the restaurants we wanted to try. A large cluster of them were in the Berkeley area so we made a day out of it.
