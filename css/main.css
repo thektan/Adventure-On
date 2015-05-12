@@ -208,10 +208,10 @@ p {
     font-size: 14px;
     line-height: 29px;
     margin: 0;
-    padding: 0;
-    width: 15%;
     font-weight: 700;
     color: #333333;
+    padding: 0 5%;
+    width: 5%;
 }
 
 .navigation-button.left {
